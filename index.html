@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <meta name="description" content="BookNest    - a portal of books">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index.html">BookNest</a></h1>
+                    <h2>Books - our passion!</h2>
+                </div>
+            </div>
+            <div class="search-bar">
+                <form method="get" action="search.html">
+                    <input type="text" name="q" placeholder="Search..." />
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="menubar">
+                <ul class="menu">
+                    <li class="selected"><a href="index.html">Home</a></li>
+                    <li><a href="films.html">Books</a></li>
+                    <li><a href="#">Novels</a></li>
+                    <li><a href="rating.html">Book Ratings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="login-button" onclick="openLoginPage()">Login</button>
+                <button class="register-button" onclick="openRegisterPage()">Register</button>
+                <a id="register-link" href="register.html" style="display: none;"></a>
+
+            </div>
+        </div>
+        
+        <div class="site_content">
+            
+            
+            <div class="content">
+                <h1>Latest Books</h1>
+                <div class="films_block">
+                    <a href="films.html"><img src="assets/img/1.jpg"></a>
+                    <a href="films.html"><img src="assets/img/2.jpg"></a>
+                    <a href="films.html"><img src="assets/img/3.jpg"></a>
+                    <a href="films.html"><img src="assets/img/4.jpg"></a>
+                    <a href="films.html"><img src="assets/img/5.jpg"></a>
+                    <a href="films.html"><img src="assets/img/6.jpg"></a>
+                    <a href="films.html"><img src="assets/img/7.jpg"></a>                 
+                    <a href="films.html"><img src="assets/img/8.jpg"></a>
+                    <a href="show.html"><img src="assets/img/9.jpg"></a>
+                    <a href="films.html"><img src="assets/img/10.jpg"></a>
+                </div><br><br><br><br>
+                <h1>Popular Books</h1>
+                <div class="films_block">
+                    <a href="#"><img src="assets/img/11.webp"></a>
+                    <a href="#"><img src="assets/img/12.webp"></a>
+                    <a href="#"><img src="assets/img/13.webp"></a>
+                    <a href="#"><img src="assets/img/14.webp"></a>
+                    <a href="#"><img src="assets/img/15.webp"></a>
+                </div>
+                <div class="posts">
+                    <hr>
+                    <h2><a href="#">By Stefanie Hargreaves</a></h2>
+                    <div class="posts_content">
+                        <p>
+                            The power to be found between the pages of a book is formidable, indeed. And these 80 inspiring quotes about books and importance of reading are here to remind you of that. From beloved bestsellers to iconic celebrities, these quotes exemplify the benefits of reading and of a good books to comfort, challenge, and inspire you. For, as author Anna Quindlen says, "Books are the plane, and the train, and the road. They are the destination, and the journey. They are home."
+                        </p>
+                    </div>
+                    <p><a href="#">Home</a></p>
+                    <hr>
+                   
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="films.html">Books</a> |
+                <a href="#">Novels</a> |
+                <a href="rating.html">Book Ratings</a> |
+                <a href="contact.html">Contact</a>
+            </p>
+            <p>wh-db.com 2015</p>
+        </div>
+    </div>
+    <script>
+        function openRegisterPage() {
+            var registerLink = document.getElementById("register-link");
+            registerLink.click();
+        }
+    </script>
+     <script>
+        function openLoginPage() {
+            window.location.href = "login.html"; // Redirect to the login page
+        }
+
+        function openRegisterPage() {
+            var registerLink = document.getElementById("register-link");
+            registerLink.click();
+        }
+    </script>
+    
+</body>
+</html>
