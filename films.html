@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <meta name="description" content="BookNest    - a portal of books">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index.html">BookNest</a></h1>
+                    <h2>Books - our passion!</h2>
+                </div>
+            </div>
+            <div class="search-bar">
+                <form method="get" action="search.html">
+                    <input type="text" name="q" placeholder="Search..." />
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="menubar">
+                <ul class="menu">
+                    <li class="selected"><a href="index.html">Home</a></li>
+                    <li><a href="films.html">Books</a></li>
+                    <li><a href="#">Novels</a></li>
+                    <li><a href="rating.html">Book Ratings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="login-button" onclick="openLoginPage()">Login</button>
+                <button class="register-button" onclick="openRegisterPage()">Register</button>
+                <a id="register-link" href="register.html" style="display: none;"></a>
+
+            </div>
+        </div>
+
+        <div class="site_content1">
+            
+
+            <div class="content1">
+                <div class="info_film">
+                    <img src="assets/img/1.jpg">
+                    n The Art of Self-Improvement: Ten Timeless Truths., focusing on ten core ideas of self-improvement that run through the world’s advice literature.
+                    <br><div class="button"><a href="show.html">Read</a></div>
+                </div>
+                <div class="info_film">
+                    <img src="assets/img/2.jpg">
+                    One of my most favourite books is Unposted Letter by Mahatria Ra. I’ve sought help from it multiple times and will always continue to seek from it.
+                    
+                    <div class="button"><a href="#">Read</a></div>
+                </div>
+                <div class="info_film">
+                    <img src="assets/img/3.jpg">
+                    
+                    It’s vitally important that you read books. As Mark Twain wrote, “The man who does not read good books has no advantage over the man.
+                    
+                    <div class="button"><a href="#">Read</a></div>
+                </div>
+                <div class="info_film">
+                    <img src="assets/img/4.jpg">
+                    The Tao Te Ching is an ancient text composed of 81verses, which is often quite poetic in the way it imparts wisdom and describes the way of the Tao. 
+
+                    
+                    <div class="button"><a href="#">Read</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="films.html">Books</a> |
+                <a href="#">Novels</a> |
+                <a href="rating.html">Book Ratings</a> |
+                <a href="contact.html">Contact Us</a>
+            </p>
+            <p>wh-db.com 2015</p>
+        </div>
+    </div>
+    <script>
+        function openRegisterPage() {
+            var registerLink = document.getElementById("register-link");
+            registerLink.click();
+        }
+    </script>
+     <script>
+        function openLoginPage() {
+            window.location.href = "login.html"; // Redirect to the login page
+        }
+
+        function openRegisterPage() {
+            var registerLink = document.getElementById("register-link");
+            registerLink.click();
+        }
+    </script>
+</body>
+</html>

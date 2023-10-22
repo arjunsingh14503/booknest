@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - BookNest</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index.html">BookNest</a></h1>
+                    <h2>Books - our passion!</h2>
+                </div>
+            </div>
+        </div>
+        <div class="site_content">
+            <div class="content">
+                <h1>Register</h1>
+                <div class="registration-form">
+                    <form id="registrationForm">
+                        <div class="input-container">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="confirm_password">Confirm Password:</label>
+                            <input type="password" id="confirm_password" name="confirm_password" required>
+                        </div>
+                        <button type="button" id="registerButton">Register</button>
+                    </form>
+                </div>
+                <div id="registrationMessage" style="display: none;">Registered Successfully!</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="films.html">Books</a> |
+            <a href="#">Novels</a> |
+            <a href="rating.html">Book Ratings</a> |
+            <a href="contact.html">Contact</a>
+        </p>
+        <p>wh-db.com 2015</p>
+    </div>
+</div>
+<script src="assets/js/register.js"></script>
+    <script>
+    
+        const registrationForm = document.getElementById('registrationForm');
+        const registrationMessage = document.getElementById('registrationMessage');
+
+        document.getElementById('registerButton').addEventListener('click', () => {
+            
+            setTimeout(() => {
+                registrationForm.style.display = 'none';
+                registrationMessage.style.display = 'block';
+            }, 1000);
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <meta name="description" content="BookNest    - a portal of books">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index.html">BookNest</a></h1>
+                    <h2>Books - our passion!</h2>
+                </div>
+            </div>
+            <div class="search-bar">
+                <form method="get" action="search.html">
+                    <input type="text" name="q" placeholder="Search..." />
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="menubar">
+                <ul class="menu">
+                    <li class="selected"><a href="index.html">Home</a></li>
+                    <li><a href="films.html">Books</a></li>
+                    <li><a href="#">Novels</a></li>
+                    <li><a href="rating.html">Book Ratings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="login-button" onclick="openLoginPage()">Login</button>
+                <button class="register-button" onclick="openRegisterPage()">Register</button>
+                <a id="register-link" href="register.html" style="display: none;"></a>
+
+            </div>
+        </div>
+
+            <div class="content">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Book</th>
+                        <th class="center">Year</th>
+                        <th class="center">Rating</th>
+                    </tr>
+                    <tr>
+                        <td class="center"><img src="assets/img/1.jpg"></td>
+                        <td>1. <a href="show.html">The Art of Self-Improvement</a></td>
+                        <td class="center">2014</td>
+                        <td class="center rating">8.1</td>
+                    </tr>
+                    <tr>
+                        <td class="center"><img src="assets/img/2.jpg"></td>
+                        <td>2. <a href="#">Unposted Letter</a></td>
+                        <td class="center">1999</td>
+                        <td class="center rating">8.0</td>
+                    </tr>
+                    <tr>
+                        <td class="center"><img src="assets/img/3.jpg"></td>
+                        <td>3. <a href="#">The 101 best Personal Development Classics</a></td>
+                        <td class="center">2015</td>
+                        <td class="center rating">7.5</td>
+                    </tr>
+                    <tr>
+                        <td class="center"><img src="assets/img/4.jpg"></td>
+                        <td>4. <a href="#">One thought may change your life</a></td>
+                        <td class="center">2013</td>
+                        <td class="center rating">7.4</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="films.html">Books</a> |
+                <a href="#">Novels</a> |
+                <a href="rating.html">Book Ratings</a> |
+                <a href="contact.html">Contact Us</a>            
+            </p>
+            <p>wh-db.com 2015</p>
+        </div>
+    </div>
+    <script>
+        function openRegisterPage() {
+            var registerLink = document.getElementById("register-link");
+            registerLink.click();
+        }
+    </script>
+     <script>
+        function openLoginPage() {
+            window.location.href = "login.html"; // Redirect to the login page
+        }
+
+        function openRegisterPage() {
+            var registerLink = document.getElementById("register-link");
+            registerLink.click();
+        }
+    </script>
+</body>
+</html>
